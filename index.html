@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta tags SEO -->
+    <meta name="description" content="Game Shop - Sua loja especializada em games em São Paulo. Encontre os melhores jogos, consoles e acessórios das marcas Nintendo, Xbox e PlayStation com preços competitivos.">
+    <meta name="keywords" content="games, jogos, playstation, xbox, nintendo, loja de jogos, são paulo">
+    <meta name="author" content="Juice Luqi">
+
+    <title>Game Shop</title>
+    
+    <link rel="stylesheet" href="./main.css">
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <h1 class="main-logo">
+                    <span class="game">GAME</span>
+                    <span class="shop">SHOP</span>
+                </h1>
+                <div class="logo-subtitle">Aqui você encontra os melhores jogos</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="#contacto">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <img class="store-front" 
+            src="./images/loja.jpg" 
+            alt="Fachada da loja Game Shop"
+            loading="lazy">
+            <div>
+                <h2>Sobre a loja</h2>
+
+                <p>Bem-vindo à <strong>Game Shop</strong>, sua loja especializada em games! Oferecemos os melhores jogos, consoles e acessórios das principais marcas do mercado, com atendimento personalizado e preços competitivos.</p>
+                <p>Nossa equipe é formada por <em>verdadeiros apaixonados por games</em>, prontos para ajudar você a encontrar exatamente o que procura. Venha nos visitar e descubra por que somos referência no mundo dos videogames há mais de 10 anos!</p>
+                
+                <ul class="brands-list">
+                    <li><img src="./images/nintendo.png" alt="Nintendo"></li>
+                    <li><img src="./images/xbox.png" alt="Xbox"></li>
+                    <li><img src="./images/playstation.png" alt="Playstation"></li>
+                </ul>
+            </div>
+
+        </div>
+        </section>
+
+        <section>
+            <hr style="width: 80%; margin: 0 auto;"/>
+        </section>
+        
+        <section id="contacto">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-details">
+                            <h3>Informações</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1234 - São Paulo, SP</p>
+                            <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                            <p><i class="fas fa-envelope"></i> juiceluqi@gmail.com</p>
+                        </div>
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.098839332921!2d-46.65620382375411!3d-23.561067178877777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1709669145439!5m2!1spt-BR!2sbr" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Envie sua mensagem</h3>
+                        <form id="contactForm" onsubmit="return sendEmail(event)">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder="Seu nome">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required placeholder="Assunto">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" required placeholder="Sua mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Game Shop - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

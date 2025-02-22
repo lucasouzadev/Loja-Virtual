@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Game Store</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <h1 class="main-logo">
+                    <span class="game">GAME</span>
+                    <span class="shop">SHOP</span>
+                </h1>
+                <div class="logo-subtitle">Aqui você encontra os melhores jogos</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="#contacto">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="produtos">
+        <div class="container">
+            <div class="produtos-header">
+                <h2>Nossos Produtos</h2>
+                <p class="subtitulo">Descubra os melhores jogos para todas as plataformas</p>
+                <div class="filtros">
+                    <button class="filtro-btn ativo">Todos</button>
+                    <button class="filtro-btn">PlayStation</button>
+                    <button class="filtro-btn">Xbox</button>
+                    <button class="filtro-btn">Nintendo</button>
+                    <button class="filtro-btn">PC</button>
+                </div>
+            </div>
+
+            <div class="produtos-grid">
+                <!-- PlayStation -->
+                <div class="produto-card">
+                    <div class="produto-imagem">
+                        <div class="produto-badge">Lançamento</div>
+                        <img src="./images/final-fantasy-16.jpg" alt="Final Fantasy XVI">
+                    </div>
+                    <div class="produto-info">
+                        <h3>Final Fantasy XVI</h3>
+                        <div class="produto-plataformas">
+                            <span>PlayStation 5</span>
+                        </div>
+                        <div class="produto-rating">
+                            <div class="stars">
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star half">★</span>
+                            </div>
+                            <span class="rating-count">(128)</span>
+                        </div>
+                        <p class="produto-preco">R$ 349,90</p>
+                        <button class="comprar-btn">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <!-- Xbox -->
+                <div class="produto-card">
+                    <div class="produto-imagem">
+                        <div class="produto-badge">Exclusivo</div>
+                        <img src="./images/forza-5.jpg" alt="Forza Horizon 5">
+                    </div>
+                    <div class="produto-info">
+                        <h3>Forza Horizon 5</h3>
+                        <div class="produto-plataformas">
+                            <span>Xbox Series X|S</span>
+                            <span>Xbox One</span>
+                        </div>
+                        <div class="produto-rating">
+                            <div class="stars">
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                            </div>
+                            <span class="rating-count">(256)</span>
+                        </div>
+                        <p class="produto-preco">R$ 299,90</p>
+                        <button class="comprar-btn">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <!-- Nintendo -->
+                <div class="produto-card">
+                    <div class="produto-imagem">
+                        <div class="produto-badge">Novo</div>
+                        <img src="./images/mario-wonder.jpg" alt="Super Mario Bros. Wonder">
+                    </div>
+                    <div class="produto-info">
+                        <h3>Super Mario Bros. Wonder</h3>
+                        <div class="produto-plataformas">
+                            <span>Nintendo Switch</span>
+                        </div>
+                        <div class="produto-rating">
+                            <div class="stars">
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <span class="rating-count">(89)</span>
+                        </div>
+                        <p class="produto-preco">R$ 299,90</p>
+                        <button class="comprar-btn">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <!-- PC -->
+                <div class="produto-card">
+                    <div class="produto-imagem">
+                        <div class="produto-badge">-20% OFF</div>
+                        <img src="./images/baldurs-gate-3.jpg" alt="Baldur's Gate 3">
+                    </div>
+                    <div class="produto-info">
+                        <h3>Baldur's Gate 3</h3>
+                        <div class="produto-plataformas">
+                            <span>PC</span>
+                        </div>
+                        <div class="produto-rating">
+                            <div class="stars">
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                            </div>
+                            <span class="rating-count">(128)</span>
+                        </div>
+                        <p class="produto-preco">
+                            <span class="preco-original">R$ 299,90</span>
+                            R$ 239,90
+                        </p>
+                        <button class="comprar-btn">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <!-- Multiplataforma -->
+                <div class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="./images/resident-evil-4.jpg" alt="Resident Evil 4 Remake">
+                    </div>
+                    <div class="produto-info">
+                        <h3>Resident Evil 4 Remake</h3>
+                        <div class="produto-plataformas">
+                            <span>PlayStation 5</span>
+                            <span>Xbox Series X|S</span>
+                            <span>PC</span>
+                        </div>
+                        <div class="produto-rating">
+                            <div class="stars">
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star active">★</span>
+                                <span class="star half">★</span>
+                            </div>
+                            <span class="rating-count">(312)</span>
+                        </div>
+                        <p class="produto-preco">R$ 289,90</p>
+                        <button class="comprar-btn">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nova seção com linha divisória -->
+    <section>
+        <hr class="divisor">
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Game Store - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html> 

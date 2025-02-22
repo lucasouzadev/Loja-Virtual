@@ -1,0 +1,77 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Melhorias de acessibilidade */
+:root {
+    scroll-behavior: smooth;
+}
+
+/* Melhorias para dispositivos móveis */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajustes para formulário em dispositivos móveis */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Melhorias para touch targets */
+button, 
+.filtro-btn,
+.nav-link {
+    min-height: 44px; /* Recomendação para alvos touch */
+    min-width: 44px;
+}
+
+/* Ajustes para menu em dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        padding: 10px;
+    }
+    
+    .produto-container {
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .filtro-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+/* Para tablets */
+@media screen and (max-width: 768px) {
+    .produto-card {
+        width: 45%; /* Ajusta para 2 cards por linha */
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* Para smartphones */
+@media screen and (max-width: 480px) {
+    .produto-card {
+        width: 100%; /* Um card por linha */
+    }
+    
+    .filtro-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+    }
+} 
